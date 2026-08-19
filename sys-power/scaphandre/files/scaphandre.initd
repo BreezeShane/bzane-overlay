@@ -1,0 +1,12 @@
+#!/sbin/openrc-run
+
+name="scaphandre"
+description="Scaphandre power monitoring prometheus exporter"
+command="/usr/bin/scaphandre"
+command_args="prometheus -p 9999"
+command_background="yes"
+pidfile="/run/${RC_SVCNAME}.pid"
+
+depend() {
+    need localmount
+}

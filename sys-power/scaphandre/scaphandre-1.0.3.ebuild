@@ -267,6 +267,7 @@ inherit cargo
 DESCRIPTION="Electric power/energy consumption monitoring agent."
 HOMEPAGE="https://scaphandre.hubblo.org"
 SRC_URI="
+	https://github.com/hubblo-org/scaphandre/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
 
